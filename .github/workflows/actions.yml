@@ -2,7 +2,7 @@ name: Monedes
 
 on:
   push: 
-    branches: [ main ]
+    branches: [ main, test ]
 
 jobs:
   create-list:
@@ -22,3 +22,6 @@ jobs:
           
       - name: Correm l'script
         run: python ./euro.py
+
+      - name: Ver version
+        run: python --version
